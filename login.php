@@ -10,6 +10,9 @@
 	<body>
 		<div class="row  p-2">
 			<div class="container col-md-4 mt-5">							
+				<div class="logoArea">
+					<img width="200" src="./img/logo.png" />
+				</div>
 				<form name="loginForm" action="kontrol.php" method="POST">
 					<div class="formInputs">
 						<?php 

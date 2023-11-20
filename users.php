@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Giriş Ekranı</title>
+		<title>kullanıcılar Ekranı</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<style>
 			body{background:#f0f0f0}
@@ -10,6 +10,8 @@
 	<body>
 <?php
 	session_start();
+	include "yetki_kontrol.php";
+	
 	
 	if(!isset($_SESSION["token"])){
 		header("location:login.php");
@@ -30,7 +32,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-10" style="margin:0 auto">
-			Merhaba <?php echo $_SESSION["kad"]."-".$_SESSION["role"]?>
+			kullanıcılar bu alanda olacak
 		</div>
 	</div>
 
